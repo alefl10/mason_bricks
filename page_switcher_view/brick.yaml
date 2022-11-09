@@ -1,0 +1,17 @@
+name: page_switcher_view
+description: Creates the directory structure and boilerplate to implement a feature leveraging the page-switcher-view pattern.
+version: 0.0.2+1
+repository: https://github.com/alefl10/mason_bricks/tree/main/google_places_modelspage-switcher-view-brick/
+
+
+vars:
+  app_name:
+    type: string
+    description: Name of the app including the new feature.
+    default: My App
+    prompt: What is the name of your App?
+  feature_name:
+    type: string
+    description: Name of the new feature implementing the Page-Switcher-Pattern.
+    default: New Feature
+    prompt: What is the name of your Page-Switcher-View feature?
