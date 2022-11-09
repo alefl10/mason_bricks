@@ -1,0 +1,11 @@
+{
+    "@@locale": "en",
+    "homeAppBarTitle": "{{app_name.titleCase()}}",
+    "@homeAppBarTitle": {
+        "description": "Text shown in the AppBar of the HomePage."
+    },
+    "homeMessage": "The world is your oyster",
+    "@homeMessage": {
+        "description": "Text shown in the Home Page body."
+    }
+}

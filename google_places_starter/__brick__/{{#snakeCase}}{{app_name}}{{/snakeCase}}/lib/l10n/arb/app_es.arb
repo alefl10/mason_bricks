@@ -1,0 +1,11 @@
+{
+    "@@locale": "es",
+    "homeAppBarTitle": "{{app_name.titleCase()}}",
+    "@homeAppBarTitle": {
+        "description": "Texto mostrado en la AppBar de la HomePage."
+    },
+    "homeMessage": "El mundo es tuyo",
+    "@homeMessage": {
+        "description": "Texto mostrado en el body de la HomePage."
+    }
+}
