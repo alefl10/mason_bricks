@@ -98,7 +98,8 @@ unlinked_spec.ds
 **/ios/Runner/GeneratedPluginRegistrant.*
 
 # Secret Config Files
-config/
+# TODO(you): uncomment
+# config/
 
 # Coverage
 coverage/

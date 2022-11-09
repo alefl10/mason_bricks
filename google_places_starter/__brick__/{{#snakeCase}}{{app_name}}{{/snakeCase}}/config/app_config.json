@@ -1,0 +1,5 @@
+{
+    "googleMapsApiKey_dev": "{{dev_api_key}}",
+    "googleMapsApiKey_stg": "{{stg_api_key}}",
+    "googleMapsApiKey_prod": "{{prod_api_key}}"
+}
