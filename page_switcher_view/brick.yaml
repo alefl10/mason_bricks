@@ -1,7 +1,7 @@
 name: page_switcher_view
 description: Creates the directory structure and boilerplate to implement a feature leveraging the page-switcher-view pattern.
 version: 1.0.0
-repository: https://github.com/alefl10/mason_bricks/tree/main/google_places_modelspage-switcher-view-brick/
+repository: https://github.com/alefl10/mason_bricks/tree/main/page-switcher-view-brick
 
 
 vars:
