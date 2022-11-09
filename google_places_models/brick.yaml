@@ -1,4 +1,4 @@
 name: google_places_models
 description: Populates a Dart package including models to handle JSON objects from the Google Places API.
-version: 1.0.1+1
-repository: https://github.com/alefl10/google_places_models_brick
+version: 1.0.1+2
+repository: https://github.com/alefl10/mason_bricks/google_places_models_brick

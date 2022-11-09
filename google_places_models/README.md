@@ -24,7 +24,7 @@ It currently supports:
 - [Find Place](https://developers.google.com/maps/documentation/places/web-service/search-find-place) - /findplacefromtext
 - [Nearby Search](https://developers.google.com/maps/documentation/places/web-service/search-nearby) - /nearbysearch
 
-[Pull Requests](https://github.com/alefl10/google_places_models_brick/pulls) to enhance and extend the package support are always welcome 😉
+[Pull Requests](https://github.com/alefl10/mason_bricks/google_places_models_brick/pulls) to enhance and extend the package support are always welcome 😉
 
 ## 📦 Dependencies
 
@@ -38,4 +38,4 @@ It currently supports:
 
 ## ✅ Outputs
 
-See [GitHub repository](https://github.com/alefl10/google_places_models_brick/tree/main/__brick__/packages/google_places_models) to check the directory structure.
+See [GitHub repository](https://github.com/alefl10/mason_bricks/google_places_models_brick/tree/main/__brick__/packages/google_places_models) to check the directory structure.
