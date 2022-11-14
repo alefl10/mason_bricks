@@ -1,4 +1,4 @@
-# Page View Feature
+# Page Switcher View
 
 A brick to create the directory structure and boilerplate to implement a feature leveraging the page-switcher-view pattern.
 
