@@ -20,7 +20,7 @@ Open Source repository hosting <a href="https://docs.brickhub.dev/">mason</a> br
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------- |
 | [google_places_models](https://brickhub.dev/bricks/google_places_models)                     | Populates a Dart package including models to handle JSON objects from the Google Places API.      | 1.0.1+3   |
 | [google_places_starter](https://brickhub.dev/bricks/google_places_starter)     | Populates a very good Flutter App ready to interact with the Google Places API.                                        | 0.1.0   |
-| [page_switcher_view](https://brickhub.dev/bricks/page_switcher_view)                                                  | Creates the directory structure and boilerplate to implement a feature leveraging the page-switcher-view pattern. | 1.0.0+2   |
+| [page_switcher_view](https://brickhub.dev/bricks/page_switcher_view)                                                  | Creates the directory structure and boilerplate to implement a feature leveraging the page-switcher-view pattern. | 1.0.0+3   |
 
 ## 📚 Docs
 
