@@ -1,3 +1,7 @@
+# 0.1.2+1
+
+- Fix bundle identifiers
+
 # 0.1.2
 
 - Fix nearbySearch in GooglePlacesClient
