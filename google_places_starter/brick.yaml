@@ -1,6 +1,6 @@
 name: google_places_starter
 description: Populates a very good Flutter App ready to interact with the Google Places API.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/alefl10/mason_bricks/tree/main/google_places_starter
 
 environment:
