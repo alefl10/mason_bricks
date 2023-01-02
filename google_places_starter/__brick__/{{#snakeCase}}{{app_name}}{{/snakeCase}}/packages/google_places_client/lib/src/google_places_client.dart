@@ -246,6 +246,8 @@ class GooglePlacesClient {
       final params = <String, String>{
         'keyword': keyword,
         'location': '${location.lat} ${location.lng}',
+        'radius': radius != null ? '$radius' : '10000',
+        'rankby': rankBy != null ? rankBy.name : RankBy.prominence.name,
         'language': language ?? _locale,
         'key': _apiKey,
       };
@@ -307,29 +309,23 @@ class GooglePlacesClient {
   ///
   /// See the official docs to find out more about the other optional params -
   /// [link](https://developers.google.com/maps/documentation/places/web-service/photos).
-  ///
-  /// Throws [FindPlaceFromTextException] on any given exceptions.
   /// {@endtemplate}
   String getPlacePhotoUrl({
     required String photoReference,
     int? maxWidth,
     int? minWidth,
   }) {
-    try {
-      final params = {
-        'photo_reference': photoReference,
-        'key': _apiKey,
-        'maxwidth': maxWidth != null ? '$maxWidth' : '400',
-      };
+    final params = {
+      'photo_reference': photoReference,
+      'key': _apiKey,
+      'maxwidth': maxWidth != null ? '$maxWidth' : '400',
+    };
 
-      if (minWidth != null) {
-        params.addEntries({'minwidth': '$minWidth'}.entries);
-      }
-
-      final uri = Uri.https(_baseUrl, placePhotoPath, params);
-      return '$uri';
-    } catch (error, stackTrace) {
-      Error.throwWithStackTrace(PlacePhotoException(error: error), stackTrace);
+    if (minWidth != null) {
+      params.addEntries({'minwidth': '$minWidth'}.entries);
     }
+
+    final uri = Uri.https(_baseUrl, placePhotoPath, params);
+    return '$uri';
   }
 }

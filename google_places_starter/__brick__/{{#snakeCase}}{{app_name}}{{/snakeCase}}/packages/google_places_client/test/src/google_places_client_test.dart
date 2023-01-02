@@ -481,25 +481,25 @@ void main() {
           },
         );
 
-        test('NearbySearchException if maxPrice is not within [0, 4]', () {
+        test('AssertionError if maxPrice is not within [0, 4]', () async {
           expect(
             () => googlePlacesClient.nearbySearch(
               keyword: 'keyword',
               location: const Geometry(lat: 1, lng: 1),
               maxPrice: 5,
             ),
-            throwsA(isA<NearbySearchException>()),
+            throwsA(isA<AssertionError>()),
           );
         });
 
-        test('NearbySearchException if minPrice is not within [0, 4]', () {
+        test('AssertionError if minPrice is not within [0, 4]', () async {
           expect(
             () => googlePlacesClient.nearbySearch(
               keyword: 'keyword',
               location: const Geometry(lat: 1, lng: 1),
               minPrice: -1,
             ),
-            throwsA(isA<NearbySearchException>()),
+            throwsA(isA<AssertionError>()),
           );
         });
 
@@ -612,8 +612,8 @@ void main() {
         test('expected expected stringified uri', () {
           const expectedUri = 'https://maps.googleapis.com/maps/api/place/photo'
               '?photo_reference=ref'
-              '&maxwidth=400'
-              '&key=$apiKey';
+              '&key=$apiKey'
+              '&maxwidth=400';
           expect(
             googlePlacesClient.getPlacePhotoUrl(photoReference: 'ref'),
             expectedUri,
@@ -629,8 +629,8 @@ void main() {
             const expectedUri =
                 'https://maps.googleapis.com/maps/api/place/photo'
                 '?photo_reference=ref'
-                '&maxwidth=$maxWidth'
                 '&key=$apiKey'
+                '&maxwidth=$maxWidth'
                 '&minwidth=$minWidth';
             expect(
               googlePlacesClient.getPlacePhotoUrl(
