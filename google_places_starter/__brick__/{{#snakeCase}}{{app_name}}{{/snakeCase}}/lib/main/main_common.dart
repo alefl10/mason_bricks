@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geolocator_client/geolocator_client.dart';
 import 'package:google_places_client/google_places_client.dart';
 import 'package:google_places_repo/google_places_repo.dart';
 import 'package:permission_client/permission_client.dart';
@@ -13,12 +14,14 @@ Future<Widget> mainCommon({required AppEnvironment appEnvironment}) async {
     apiKey: ConfigReader.getGoogleMapsApiKey(appEnvironment.name),
   );
   const permissionClient = PermissionClient();
+  const geolocatorClient = GeolocatorClient();
 
   // Repositories Initialization
   final googlePlacesRepo = GooglePlacesRepo(client: googlePlacesClient);
 
   return App(
     permissionClient: permissionClient,
+    geolocatorClient: geolocatorClient,
     googlePlacesRepo: googlePlacesRepo,
   );
 }

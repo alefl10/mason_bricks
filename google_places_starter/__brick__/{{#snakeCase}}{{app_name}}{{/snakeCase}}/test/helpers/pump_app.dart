@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:geolocator_client/geolocator_client.dart';
 import 'package:google_places_repo/google_places_repo.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:permission_client/permission_client.dart';
@@ -8,12 +9,15 @@ import 'package:{{app_name.snakeCase()}}/l10n/l10n.dart';
 
 class MockPermissionClient extends Mock implements PermissionClient {}
 
+class MockGeolocatorClient extends Mock implements GeolocatorClient {}
+
 class MockGooglePlacesRepo extends Mock implements GooglePlacesRepo {}
 
 extension PumpApp on WidgetTester {
   Future<void> pumpApp(
     Widget widget, {
     PermissionClient? permissionClient,
+    GeolocatorClient? geolocatorClient,
     GooglePlacesRepo? googlePlacesRepo,
   }) {
     return pumpWidget(
@@ -21,6 +25,9 @@ extension PumpApp on WidgetTester {
         providers: [
           RepositoryProvider.value(
             value: permissionClient ?? MockPermissionClient(),
+          ),
+          RepositoryProvider.value(
+            value: geolocatorClient ?? MockGeolocatorClient(),
           ),
           RepositoryProvider.value(
             value: googlePlacesRepo ?? MockGooglePlacesRepo(),

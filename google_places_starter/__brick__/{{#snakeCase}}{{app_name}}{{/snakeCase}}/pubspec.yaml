@@ -15,6 +15,9 @@ dependencies:
   flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
+  geolocator: ^9.0.2
+  geolocator_client:
+    path: packages/geolocator_client
   google_places_client:
     path: packages/google_places_client
   google_places_models:

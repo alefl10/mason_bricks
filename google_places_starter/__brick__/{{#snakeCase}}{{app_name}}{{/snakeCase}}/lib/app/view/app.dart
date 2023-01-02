@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:geolocator_client/geolocator_client.dart';
 import 'package:google_places_repo/google_places_repo.dart';
 import 'package:permission_client/permission_client.dart';
 import 'package:{{app_name.snakeCase()}}/home/home.dart';
@@ -11,17 +12,21 @@ class App extends StatelessWidget {
     super.key,
     required PermissionClient permissionClient,
     required GooglePlacesRepo googlePlacesRepo,
+    required GeolocatorClient geolocatorClient,
   })  : _permissionClient = permissionClient,
+        _geolocatorClient = geolocatorClient,
         _googlePlacesRepo = googlePlacesRepo;
 
   final PermissionClient _permissionClient;
   final GooglePlacesRepo _googlePlacesRepo;
+  final GeolocatorClient _geolocatorClient;
 
   @override
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(
       providers: [
         RepositoryProvider.value(value: _permissionClient),
+        RepositoryProvider.value(value: _geolocatorClient),
         RepositoryProvider.value(value: _googlePlacesRepo),
       ],
       child: MultiBlocProvider(
