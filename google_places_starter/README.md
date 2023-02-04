@@ -4,11 +4,11 @@ A mason brick to populate a very good Flutter App ready to interact with the Goo
 
 🦄 This brick uses [very_good_cli](https://pub.dev/packages/very_good_cli) for the creation of the App. Therefore, this package features the same directory structure, and additional configurations found in a Flutter app and Dart package created with the following commands, respectively:
 ```
-very_good create
+very_good create flutter_app
 ```
 
 ```
-very_good create -t dart_pkg
+very_good create dart_pkg
 ```
 
 🚨 This brick uses `Super Initializers`. Make sure you're using dart 2.17 on your end.

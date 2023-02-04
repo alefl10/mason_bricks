@@ -1,3 +1,9 @@
+# 1.0.0
+
+- First stable release
+- Upgraded Dart and Flutter to their latests stable versions
+- Upgraded mason version to its latest stable version
+
 # 0.1.2+1
 
 - Fix bundle identifiers
