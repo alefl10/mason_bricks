@@ -4,7 +4,7 @@ version: 0.1.2+1
 repository: https://github.com/alefl10/mason_bricks/tree/main/google_places_starter
 
 environment:
-  mason: ">=0.1.0-dev.35 <0.1.0"
+  mason: ">=0.1.0-dev.41 <0.1.0"
 
 vars:
   app_name:

@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Text(
           '${l10n.homeMessage} 🗺',
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
       ),
     );

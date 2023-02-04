@@ -1,10 +1,10 @@
 name: google_places_repo
 description: Repository implementation to interact with the Google Places API via the GooglePlacesClient.
-version: 0.1.0+1
+version: 1.0.0
 publish_to: none
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
+  sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
   google_places_client:

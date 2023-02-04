@@ -1,11 +1,11 @@
 name: {{app_name.snakeCase()}}
-description: A Very Good Project created by Very Good CLI.
+description: Flutter App ready to interact with the Google Places API.
 version: 1.0.0+1
 publish_to: none
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
-  flutter: 3.3.10
+  sdk: ">=2.19.0 <3.0.0"
+  flutter: 3.7.0
 
 dependencies:
   bloc: ^8.1.0
