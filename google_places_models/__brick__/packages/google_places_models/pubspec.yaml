@@ -1,16 +1,16 @@
 name: google_places_models
-description: A Very Good Project created by Very Good CLI.
-version: 0.1.0+1
+description: Dart package including models to handle JSON objects from the Google Places API.
+version: 1.0.0
 publish_to: none
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
+  sdk: '>=2.19.0 <3.0.0'
 
 dependencies:
   equatable: ^2.0.5
-  json_annotation: ^4.7.0
+  json_annotation: ^4.8.0
   
 dev_dependencies:
   build_runner: ^2.3.2
-  json_serializable: ^6.5.4
+  json_serializable: ^6.6.1
   very_good_analysis: ^3.1.0
